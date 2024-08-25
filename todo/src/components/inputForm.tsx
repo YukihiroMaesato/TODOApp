@@ -6,10 +6,15 @@ import { useRecoilState, useSetRecoilState } from 'recoil';
 import { Input, InputProps } from "@/components/input";
 import { TextArea, TextAreaProps } from "@/components/textarea";
 
-const InputMemo = memo((props: InputProps) => <Input {...props} />);
-const TextAreaMemo = memo((props: TextAreaProps) => <TextArea {...props} />);
+const InputMemo = memo(function InputMemoComponent(props: InputProps) {
+    return <Input {...props} />;
+});
 
-const InputForm = () => {
+const TextAreaMemo = memo(function TextAreaMemoComponent(props: TextAreaProps) {
+    return <TextArea {...props} />;
+});
+
+const InputForm = function InputFormFunction() {
     const setTodos = useSetRecoilState<Todo[]>(todoState);
     const [count, setCount] = useRecoilState(todoCount);
 

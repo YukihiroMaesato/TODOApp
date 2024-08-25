@@ -3,11 +3,11 @@ import { useRecoilState } from 'recoil';
 import { todoState } from '../state/todoState';
 import Todo from '@/types/inputForm';
 
-type ListItemProps = {
+type ListItemPropsTodo = {
     todo: Todo;
 };
 
-export const ListItem: React.FC<ListItemProps> = memo(({ todo }) => {
+export const ListItem: React.FC<ListItemPropsTodo> = memo(function ListItemComponent({ todo }) {
     const [todos, setTodos] = useRecoilState<Todo[]>(todoState);
 
     // ステータス変更

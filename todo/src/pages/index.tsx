@@ -1,6 +1,6 @@
 import { Inter } from "next/font/google";
 import InputForm from "../components/inputForm";
-import ListItemProps from "@/components/ListItemProps"
+import ListItemProps from "@/components/listItemProps"
 
 const inter = Inter({ subsets: ["latin"] });
 
