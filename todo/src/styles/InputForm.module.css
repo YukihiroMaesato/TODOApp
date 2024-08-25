@@ -1,0 +1,4 @@
+/* InputForm.module.css */
+.textarea {
+    resize: none; /* リサイズを無効にする */
+}
