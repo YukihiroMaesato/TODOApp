@@ -27,8 +27,8 @@ export const ListItem: React.FC<ListItemPropsTodo> = memo(function ListItemCompo
             <div key={todo.id} className="border border-gray-300 bg-white w-full   mt-4">
                 <div className="flex flex-row">
                     <div className="p-1 w-16">{todo.status}</div>
-                    <div className="p-1 w-20">タイトル:</div>
-                    <div className="p-1 w-48">{todo.title}</div>
+                    <div className="p-1 w-22">タイトル:</div>
+                    <div className="p-1 w-46">{todo.title}</div>
                 </div>
                 <div className="flex flex-row">
                     <div className="p-1 w-23">Description:</div>
